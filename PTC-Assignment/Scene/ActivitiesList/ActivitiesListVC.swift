@@ -50,6 +50,16 @@ class ActivitiesListVC: UITableViewController {
             .store(in: &subscriptions)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        if let vc = segue.destination as? ActivityDetailVC,
+           let selectedIp = tableView.indexPathForSelectedRow,
+           let activity = viewModel.getActivity(at: selectedIp) {
+            let detailVM = ActivityDetailVM(activity: activity)
+            vc.viewModel = detailVM
+        }
+    }
+    
     // MARK: - Private
 
     private func updateItems() {
@@ -105,5 +115,4 @@ class ActivitiesListVC: UITableViewController {
         
         return cell
     }
-
 }

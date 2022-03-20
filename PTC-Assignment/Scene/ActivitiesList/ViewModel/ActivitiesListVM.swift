@@ -77,7 +77,7 @@ class ActivitiesListVM {
                 "\(activity.accessibility ?? 0)")
     }
     
-    private func getActivity(at indexPath: IndexPath) -> Activity? {
+    func getActivity(at indexPath: IndexPath) -> Activity? {
         let group = getGroup(at: indexPath.section)
         guard group.count > indexPath.row else { return nil }
         return group[indexPath.row]

@@ -36,6 +36,12 @@
 		F5EFAFFE27E6E14C000D5422 /* ActivityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EFAFFD27E6E14C000D5422 /* ActivityTableCell.swift */; };
 		F5EFAFFF27E6E14C000D5422 /* ActivityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EFAFFD27E6E14C000D5422 /* ActivityTableCell.swift */; };
 		F5EFB00027E6E14C000D5422 /* ActivityTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EFAFFD27E6E14C000D5422 /* ActivityTableCell.swift */; };
+		F5EFB00427E72E25000D5422 /* ActivityDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EFB00327E72E25000D5422 /* ActivityDetailVM.swift */; };
+		F5EFB00527E72E25000D5422 /* ActivityDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EFB00327E72E25000D5422 /* ActivityDetailVM.swift */; };
+		F5EFB00627E72E25000D5422 /* ActivityDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EFB00327E72E25000D5422 /* ActivityDetailVM.swift */; };
+		F5EFB00827E72E49000D5422 /* ActivityDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EFB00727E72E49000D5422 /* ActivityDetailVC.swift */; };
+		F5EFB00927E72E49000D5422 /* ActivityDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EFB00727E72E49000D5422 /* ActivityDetailVC.swift */; };
+		F5EFB00A27E72E49000D5422 /* ActivityDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EFB00727E72E49000D5422 /* ActivityDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +83,8 @@
 		F5EFAFF127E647BF000D5422 /* ActivitiesListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListVM.swift; sourceTree = "<group>"; };
 		F5EFAFF927E6533D000D5422 /* ActivitiesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesListVC.swift; sourceTree = "<group>"; };
 		F5EFAFFD27E6E14C000D5422 /* ActivityTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableCell.swift; sourceTree = "<group>"; };
+		F5EFB00327E72E25000D5422 /* ActivityDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailVM.swift; sourceTree = "<group>"; };
+		F5EFB00727E72E49000D5422 /* ActivityDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				F5EFAFEF27E64784000D5422 /* ActivitiesList */,
+				F5EFB00127E72DFC000D5422 /* ActivityDetail */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -231,6 +240,23 @@
 			isa = PBXGroup;
 			children = (
 				F5EFAFF127E647BF000D5422 /* ActivitiesListVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F5EFB00127E72DFC000D5422 /* ActivityDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F5EFB00227E72E05000D5422 /* ViewModel */,
+				F5EFB00727E72E49000D5422 /* ActivityDetailVC.swift */,
+			);
+			path = ActivityDetail;
+			sourceTree = "<group>";
+		};
+		F5EFB00227E72E05000D5422 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F5EFB00327E72E25000D5422 /* ActivityDetailVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -366,6 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5EFB00827E72E49000D5422 /* ActivityDetailVC.swift in Sources */,
 				F5EFAFDE27E5A19A000D5422 /* EndpointType.swift in Sources */,
 				F5EFAFE327E5A245000D5422 /* AppConfiguration.swift in Sources */,
 				F567F87127E5A0A500FED871 /* AppDelegate.swift in Sources */,
@@ -374,6 +401,7 @@
 				F5EFAFE827E5AACE000D5422 /* Activity.swift in Sources */,
 				F5EFAFFE27E6E14C000D5422 /* ActivityTableCell.swift in Sources */,
 				F5EFAFDD27E5A19A000D5422 /* APIService.swift in Sources */,
+				F5EFB00427E72E25000D5422 /* ActivityDetailVM.swift in Sources */,
 				F5EFAFE127E5A19A000D5422 /* UIViewController+Ext.swift in Sources */,
 				F5EFAFF227E647BF000D5422 /* ActivitiesListVM.swift in Sources */,
 				F5EFAFFA27E6533D000D5422 /* ActivitiesListVC.swift in Sources */,
@@ -388,8 +416,10 @@
 				F5EFAFED27E5AC3B000D5422 /* ActivityType.swift in Sources */,
 				F5EFAFE927E5AACE000D5422 /* Activity.swift in Sources */,
 				F5EFAFFF27E6E14C000D5422 /* ActivityTableCell.swift in Sources */,
+				F5EFB00527E72E25000D5422 /* ActivityDetailVM.swift in Sources */,
 				F5EFAFE427E5A245000D5422 /* AppConfiguration.swift in Sources */,
 				F567F88827E5A0A800FED871 /* PTC_AssignmentTests.swift in Sources */,
+				F5EFB00927E72E49000D5422 /* ActivityDetailVC.swift in Sources */,
 				F5EFAFFB27E6533D000D5422 /* ActivitiesListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,9 +430,11 @@
 			files = (
 				F5EFAFE527E5A245000D5422 /* AppConfiguration.swift in Sources */,
 				F5EFAFF427E647BF000D5422 /* ActivitiesListVM.swift in Sources */,
+				F5EFB00627E72E25000D5422 /* ActivityDetailVM.swift in Sources */,
 				F5EFAFEE27E5AC3B000D5422 /* ActivityType.swift in Sources */,
 				F567F89227E5A0A800FED871 /* PTC_AssignmentUITests.swift in Sources */,
 				F5EFAFEA27E5AACE000D5422 /* Activity.swift in Sources */,
+				F5EFB00A27E72E49000D5422 /* ActivityDetailVC.swift in Sources */,
 				F5EFAFFC27E6533D000D5422 /* ActivitiesListVC.swift in Sources */,
 				F567F89427E5A0A800FED871 /* PTC_AssignmentUITestsLaunchTests.swift in Sources */,
 				F5EFB00027E6E14C000D5422 /* ActivityTableCell.swift in Sources */,

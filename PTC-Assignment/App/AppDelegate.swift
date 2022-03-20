@@ -18,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let vc = ActivitiesListVC.initFromStoryboard()
         let navigationController = UINavigationController(rootViewController: vc)
         navigationController.navigationBar.barTintColor = UIColor(named: "Background")
+        navigationController.navigationBar.tintColor = UIColor(named: "ActivityTitle")
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
